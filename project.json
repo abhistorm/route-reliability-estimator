@@ -1,0 +1,54 @@
+{
+  "id": "058",
+  "slug": "058-route-reliability-estimator",
+  "name": "Route Reliability Estimator",
+  "domain": "Transportation & mobility",
+  "domain_slug": "mobility",
+  "task_type": "regression",
+  "target": "p058_route_reliability_estimator_outcome_value",
+  "features": [
+    "p058_route_reliability_estimator_trip_distance_km",
+    "p058_route_reliability_estimator_congestion_index",
+    "p058_route_reliability_estimator_avg_speed_kmh",
+    "p058_route_reliability_estimator_stop_count",
+    "p058_route_reliability_estimator_fuel_efficiency",
+    "p058_route_reliability_estimator_vehicle_age_years",
+    "p058_route_reliability_estimator_rain_intensity",
+    "p058_route_reliability_estimator_route_grade_pct",
+    "p058_route_reliability_estimator_driver_hours",
+    "p058_route_reliability_estimator_passenger_count"
+  ],
+  "model_key": "elastic-net",
+  "model_class": "ElasticNet",
+  "serving": "Streamlit",
+  "extension_focus": "KServe model deployment",
+  "seed": 202658,
+  "rows": 426309,
+  "dataset_bytes": 39850881,
+  "model_training": {
+    "source": "synthetic dataset bundled with this project",
+    "sample_rows": 5000,
+    "fit_rows": 4000,
+    "holdout_rows": 1000,
+    "metrics": {
+      "mae": 0.4502,
+      "rmse": 0.5654,
+      "r2": 0.9631
+    },
+    "artifact": "models/model.joblib"
+  },
+  "gui_feature": {
+    "mode": "sensitivity",
+    "title": "Route Reliability Estimator · Sensitivity map",
+    "description": "Rank the inputs by their local perturbation effect on the selected model. This panel is tuned to Route Reliability Estimator and its p058 route reliability estimator route grade pct signal.",
+    "focus_feature": "p058_route_reliability_estimator_route_grade_pct",
+    "mode_title": "Sensitivity map"
+  },
+  "gui": {
+    "frontend": "HTML/CSS/JavaScript",
+    "backend": "FastAPI",
+    "standalone": true
+  },
+  "model_artifact": "models/model.joblib",
+  "model_bytes": 2122
+}

@@ -1,0 +1,14 @@
+{
+  "features": {
+    "p058_route_reliability_estimator_trip_distance_km": 0.0,
+    "p058_route_reliability_estimator_congestion_index": 0.0,
+    "p058_route_reliability_estimator_avg_speed_kmh": 0.0,
+    "p058_route_reliability_estimator_stop_count": 0.0,
+    "p058_route_reliability_estimator_fuel_efficiency": 0.0,
+    "p058_route_reliability_estimator_vehicle_age_years": 0.0,
+    "p058_route_reliability_estimator_rain_intensity": 0.0,
+    "p058_route_reliability_estimator_route_grade_pct": 0.0,
+    "p058_route_reliability_estimator_driver_hours": 0.0,
+    "p058_route_reliability_estimator_passenger_count": 0.0
+  }
+}
